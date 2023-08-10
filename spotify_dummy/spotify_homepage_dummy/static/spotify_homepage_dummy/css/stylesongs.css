@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+}
+
+.playlist-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.playlist-details {
+    flex: 1;
+    background-color: rgb(55, 55, 55);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.playlist-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.playlist-item h2 {
+    color: white;
+}
+
+.playlist-item {
+    color: white;
+}
+
+.song-list {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.song-list a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set link color */
+}
+
+.song-list a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: green; /* Change color on hover */
+}
+
+.song-list a:visited {
+    text-decoration: none;
+    color: white; /* Color for visited links */
+}
+
+.song-list li {
+    color: white; /* Set text color to white */
+    margin-bottom: 10px; /* Add some spacing between song details */
+}

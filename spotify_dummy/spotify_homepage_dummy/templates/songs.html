@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify </title>
+    <link rel="icon" type="image/png" href="{% static 'spotify_homepage_dummy/images/#' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'spotify_homepage_dummy/css/stylesongs.css' %}">
+</head>
+<body>
+    <div class="playlist-container">
+        <div class="playlist-details">
+            <h1><u>{{ playlist.name }}</u></h1>
+            <br>
+            <ul class="song-list">
+                {% for song in songs %}
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" width="100px" height="100px" alt="Album Image" />
+                <li><a href= "{{ song.song_link }}">
+                    {{ song.song_name }} <br>
+                    by <b>{{ song.artist }}</b> from <b>{{ song.album }}</b></li>
+                    <br>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="spotify-playlist">
+            <div class="playlist-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" width="500px" height="500px" alt="Playlist Image" />
+                <div class="play-icon">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h2>&nbsp;&nbsp;{{ playlist.name }}</h2>
+                <p>&nbsp;&nbsp;{{ playlist.vibe }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
