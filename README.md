@@ -28,6 +28,7 @@ python manage.py runserver
 
 ```
 2. To run on Docker
+```
 docker build -t spotify-dummy .
 docker run -p 8000:8000 spotify-dummy
 
