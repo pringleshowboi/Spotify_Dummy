@@ -1,8 +1,26 @@
-# Spotify Dummy
+# 🎧 Spotify Dummy
 
-A simple Django application that displays a Spotify playlist with song details.
+**Spotify Dummy** is a minimalist clone of the Spotify web player, designed to mimic the core layout and styling of Spotify's interface. This project serves as a front-end template for developers looking to build music streaming interfaces or practice UI/UX design.
 
-## Installation
+![Spotify Dummy Screenshot](https://github.com/pringleshowboi/Spotify_Dummy/blob/main/spotify_dummy/screenshot.png?raw=true)
+
+---
+
+## 🛠️ Features
+
+- 🎵 **Home Page**: Showcases featured playlists and albums.
+- 🔍 **Search Functionality**: Allows users to search for artists, albums, or tracks.
+- 📁 **Your Library**: Displays user's saved playlists and liked songs.
+- 🎶 **Now Playing Bar**: Persistent bottom bar showing current track info and playback controls.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed on your machine.
+
 
 ### Prerequisites
 
